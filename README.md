@@ -235,7 +235,7 @@ adding `to_json` to the end:
 class BirdsController < ApplicationController
   def index
     @birds = Bird.all
-    render json: { birds: @birds, messages: ['Hello Birds', 'Goodbye Birds'] }.to_json
+  render json: { birds: @birds, messages: ['Hello Birds', 'Goodbye Birds'] }.to_json
   end
 end
 ```
